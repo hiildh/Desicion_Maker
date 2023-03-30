@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Decisões</title>
+        <link rel="stylesheet" href="style.css">
+    </header>
+    <body>
+        <section id="inicio">
+            <div class="cabeçalho">
+                <h1>Site para resolução de conflitos</h1>
+            </div>
+            <div class="first_input">
+                <h3>Insira a sua dúvida:</h3>
+                <input type="text" placeholder="Digite seu texto" id="question"/>
+                <button class="submit" onclick="get_value()">Enviar</button>
+                <p id="quest"></p>
+            </div>
+            <div class="second_input">
+                <h3>Insira a seguir as opções da decisão a ser feita separadas por vírgula!</h3>
+                <input type="text" placeholder="Digite seu texto" id="esc"/>
+                <button class="submit" onclick="escolherOpcao()">Escolher</button>
+                <p id="result"></p>
+                <img src="https://assets.stickpng.com/thumbs/5f4bff6ca1c43a0004a0a523.png">
+            </div>
+            <br>
+            <br>
+            <br>
+            <button onclick="remove_value()">Limpar</button>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
