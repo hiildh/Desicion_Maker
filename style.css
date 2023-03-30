@@ -1,13 +1,21 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .cabeçalho{
+    font-family: 'Merienda', cursive;
+    font-size: larger;
     background-color: rgb(255, 109, 89);
 }
 
 body{
+    font-family: 'Merienda', cursive;
     background-color: rgb(20, 19, 19);
     background-position: absolute;
-    background-size: 100% auto;
+    background-size: auto;
     max-width: 580px;
     width: 90%;
     margin: 32px auto;
@@ -34,13 +42,24 @@ h3{
 
 input{
     border-radius: 15px;
+    text-align: center;
     width: 30%;
     height: 40px;
 }
 .first_input{
     margin-top: 8%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
+.second_input{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+p{
+    color: black;
+}
+
+/* assets animados */
 
 button {
     cursor: pointer;
@@ -71,4 +90,46 @@ button::before {
 
 button:hover::before {
     width: 9em;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: auto;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
 }

@@ -2,6 +2,10 @@
 <html>
     <header>
         <title>Decisões</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
     </header>
     <body>
@@ -12,15 +16,49 @@
             <div class="first_input">
                 <h3>Insira a sua dúvida:</h3>
                 <input type="text" placeholder="Digite seu texto" id="question"/>
-                <button class="submit" onclick="get_value()">Enviar</button>
-                <p id="quest"></p>
+                <button class="submit" id="first_butt" onclick="get_value()">Enviar</button>
+            </div>
+            <div id="resp1" style="display: none;">
+                <div class="card">
+                    <div class="tools">
+                        <div class="circle">
+                            <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="green box"></span>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <p id="quest"></p>
+                    </div>
+                </div>
             </div>
             <div class="second_input">
                 <h3>Insira a seguir as opções da decisão a ser feita separadas por vírgula!</h3>
                 <input type="text" placeholder="Digite seu texto" id="esc"/>
-                <button class="submit" onclick="escolherOpcao()">Escolher</button>
-                <p id="result"></p>
-                <img src="https://assets.stickpng.com/thumbs/5f4bff6ca1c43a0004a0a523.png">
+                <button class="submit" id="second_butt" onclick="escolherOpcao()">Escolher</button>
+                <img src="https://www.pngall.com/wp-content/uploads/4/Marvel-Avengers-PNG-File.png">
+            </div>
+            <div id="resp2" style="display: none;">
+                <div class="card">
+                    <div class="tools">
+                        <div class="circle">
+                            <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="green box"></span>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <p id="result"></p>
+                    </div>
+                </div>
             </div>
             <br>
             <br>

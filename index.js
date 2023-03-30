@@ -5,6 +5,21 @@ function get_value(){
     document.getElementById("quest").innerHTML = "Sua dúvida é: " + value;
 }
 
+const botao = document.getElementById('first_butt');
+const minhaDiv = document.getElementById('resp1');
+
+botao.addEventListener('click', function() {
+    minhaDiv.style.display = 'block';
+});
+
+const botao2 = document.getElementById('second_butt');
+const minhaDiv2 = document.getElementById('resp2');
+
+botao2.addEventListener('click', function() {
+    minhaDiv2.style.display = 'block';
+});
+second_butt
+
 function escolherOpcao() {
     // Recebe as opções do usuário
     var opcoes = document.getElementById("esc").value;
@@ -25,4 +40,6 @@ function remove_value(){
     document.getElementById("quest").innerHTML = "";
     document.getElementById("esc").value = "";
     document.getElementById("result").innerHTML = "";
+    document.getElementById("resp1").style.display = "none";
+    document.getElementById("resp2").style.display = "none";
 }
